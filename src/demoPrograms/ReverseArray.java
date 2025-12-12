@@ -5,16 +5,16 @@ import java.util.Arrays;
 public class ReverseArray {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		ReverseArray obj = new ReverseArray();
-		obj.UsingNumber();
-		UsingTempArray();
-		Usingij();
-		WithoutAnything();
+		 int[] array = {1,2,3,4,5};
+		
+		UsingNumber(array);
+		Usingij(array);
+    	WithoutAnything(array);
+    	UsingTempArray(array);
+    	
 	}
 
-	public void UsingNumber() {
-		int[] array = { 1, 2, 3, 4 };
+	public static void UsingNumber(int[] array) {
 		int temp, l = array.length;
 		for (int i = 0; i < l / 2; i++) {
 			temp = array[i];
@@ -25,8 +25,8 @@ public class ReverseArray {
 
 	}
 
-	public static void Usingij() {
-		int[] array = { 1, 2, 3, 4, 5, 6 };
+	public static void Usingij(int[] array) {
+		
 		int i = 0, j = array.length - 1, temp;
 		while (i < j) {
 			temp = array[i];
@@ -39,19 +39,7 @@ public class ReverseArray {
 
 	}
 
-	public static void UsingTempArray() {
-		int[] array = { 6, 7, 8, 9 };
-		int l = array.length;
-		int[] temp = new int[l];
-		for (int i = 0; i < l; i++) {
-			temp[i] = array[l - 1 - i];
-
-		}
-		array = temp;
-		System.out.println(Arrays.toString(array));
-	}
-	public static void WithoutAnything() {
-		int[] array = {11,12,13,14,15,16};
+	public static void WithoutAnything(int[] array) {
 		int i = 0, j = array.length-1;
 		while(i<j) {
 			array[i]  = array[i] + array[j];
@@ -63,6 +51,17 @@ j--;
 		}
 		System.out.println(Arrays.toString(array));
 		
+	}
+
+	public static void UsingTempArray(int[] array) {
+		int l = array.length;
+		int[] temp = new int[l];
+		for (int i = 0; i < l; i++) {
+			temp[i] = array[l - 1 - i];
+
+		}
+		array = temp; // only change local copy of array, does not change the original array
+		System.out.println(Arrays.toString(array));
 	}
 
 }
