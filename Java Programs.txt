@@ -1,0 +1,10 @@
+1. Reverse a string
+2. Count digits in a number
+3. Swap numbers
+4. Check if string is a pallindrome 
+5. Count vowels and consonents in a string
+6. Find Duplicate character in a stiring
+7. remove spaces in a String
+8. Reverse each word in a sentence 
+9. Duplicate element in an array
+10. Check if array is sorted
