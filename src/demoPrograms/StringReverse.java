@@ -10,7 +10,7 @@ public class StringReverse {
 	reverse[i] = name.charAt(name.length()-i-1);
 	}
 	
-System.out.println(reverse);
+System.out.println(reverse);   // char[] doesnt require Arrays.toString
 	}
 
 }
