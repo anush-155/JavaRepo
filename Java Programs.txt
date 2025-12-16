@@ -1,8 +1,8 @@
-1. Reverse a string. Done
-2. Count digits in a number done
+1. Reverse a string. : Done
+2. Count digits in a number : Done
 3. Swap numbers done
-4. Check if string is a palindrome done see again once
-5. Count vowels and consonants in a string done
+4. Check if string is a palindrome done see again once : Done
+5. Count vowels and consonants in a string : Done
 6. Find Duplicate character in a string
 7. remove spaces in a String
 8. Reverse each word in a sentence 
