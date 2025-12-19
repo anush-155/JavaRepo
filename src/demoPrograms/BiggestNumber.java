@@ -7,7 +7,7 @@ int a =10, b = 200, c=30;
 if(a>b &&a>c) {
 	System.out.println(a);
 }
-else if(b>a &&b>c) {
+else if(b>a &&b>c) {   //S
 	System.out.println(b);
 }	
 else {

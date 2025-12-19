@@ -1,6 +1,6 @@
 package demoPrograms;
 
-import java.util.Arrays;
+
 
 public class BiggestInArray {
 
