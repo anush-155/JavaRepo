@@ -1,5 +1,12 @@
 package demoPrograms;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
+
+
+
 public class RemoveSpaceInString {
 
 	public static void main(String[] args) {
@@ -12,6 +19,12 @@ public class RemoveSpaceInString {
     		 i++;
     	  
       }
+    	HashMap<Integer, String> hm = new HashMap<>();  
+          hm.put(0, "Apple");
+          hm.put(1, "AApple");
+          hm.put(2, "AAApple");
+          
+          System.out.println(hm.hashCode());
 	}
 
 }
