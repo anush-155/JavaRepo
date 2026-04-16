@@ -55,7 +55,7 @@ public static void main(String[] args) {
 		int[] a = {1,2,3,4};
 		int temp, l = a.length;
 		for(int i=0;i<l/2;i++) { //when using temp, use l/2
-			temp = a[i];         // temp is best same time, less space, safe, readable
+			temp = a[i];         // temp is best save time, less space, safe, readable
 			a[i] = a[l-i-1];
 			a[l-i-1] = temp;
 		}
