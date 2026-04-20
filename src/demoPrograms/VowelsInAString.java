@@ -4,17 +4,17 @@ public class VowelsInAString {
 
 	public static void main(String[] args) {
       String name = "My name is Anush";
-      int vowel=0, consonent=0;
+      int vowel=0, consonant=0;
 		for(int i=0; i<name.length(); i++) {
 			if(name.charAt(i)=='a' | name.charAt(i)=='e' | name.charAt(i)=='i' | name.charAt(i)=='o' |name.charAt(i)=='u') {
 				System.out.println(name.charAt(i));
 				vowel ++;
 			}
 			else {
-				consonent ++;
+				consonant ++;
 			}
 		}
-		System.out.println(vowel+" "+consonent);
+		System.out.println(vowel+" "+consonant);
 		 //OR
 	int	v =0, c=0;
 	for(int j=0; j<name.length(); j++) {
