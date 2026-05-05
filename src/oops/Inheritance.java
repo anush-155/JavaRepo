@@ -1,11 +1,11 @@
 package oops;
 
 public class Inheritance {
- private String password; // private not even work for child class
+ private String password; // private not even work for child class, this is instance variable
  
  
- public void setPassword(String password) {   //line 7
-	 this.password = password; // line 8 thispassword is instance variable
+ public void setPassword(String password) {   //line 7 this is local variable
+	 this.password = password; // line 8 thispassword is instance variable : variable declared inside class but outside method
  }
  public String getPassword() {	
 	
