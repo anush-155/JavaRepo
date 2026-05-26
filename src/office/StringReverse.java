@@ -1,7 +1,5 @@
 package office;
 
-import java.util.Arrays;
-
 public class StringReverse {
 
 	public static void main(String[] args) {

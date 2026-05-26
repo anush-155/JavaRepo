@@ -1,4 +1,3 @@
-
 package demoPrograms;
 
 public class StringReverse {

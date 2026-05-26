@@ -3,7 +3,7 @@ import java.util.Arrays;
 public class Restart {
 
 	public static void main(String[] args) {
-		int[] numbers = { 0, 30, 50, 100, 4000 };
+//		int[] numbers = { 0, 30, 50, 100, 4000 };
 		Restart obj = new Restart();
 //		System.out.println("Biggest number "+obj.biggest(numbers));
 //		System.out.println("Smallest number "+obj.smallest(numbers));

@@ -16,7 +16,7 @@ public class Sets {
 		set.add(2);
 		set.add(2);
 		for(int i : set) {
-			// System.out.println(i);
+			 System.out.println(i);
 		}
 		
 		LinkedHashSet<Integer> lhSet = new LinkedHashSet<>(); // Follows insertion order
@@ -26,7 +26,7 @@ public class Sets {
 		lhSet.add(2);
 		lhSet.add(2);
 		for(int i : lhSet) {
-		//	System.out.println(i);
+			System.out.println(i);
 		}
 		
 		HashSet<Integer> hSet = new HashSet<>(); // only duplicates ignored

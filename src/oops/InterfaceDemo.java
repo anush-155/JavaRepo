@@ -7,14 +7,14 @@ public class InterfaceDemo {
 	   obj.eatsGrass();
    }
 }
-interface animal{
+interface AnimalInterface{
  void walk();
 }
 interface Herbivore{
 	void eatsGrass();
 
 }
-class goat implements animal,Herbivore {
+class goat implements AnimalInterface,Herbivore {
 	@Override
 	public void walk() {
 		System.out.println("Walk on 4 legs");
