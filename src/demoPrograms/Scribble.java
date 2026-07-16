@@ -1,31 +1,34 @@
 package demoPrograms;
 
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.ss.usermodel.Sheet;
+import org.apache.poi.ss.usermodel.Workbook;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 public class Scribble {
 
-	public static void main(String[] args) {
-		int no = 123;
-		int rem , rev=0;
-		while(no>0) {
-			rem = no%10;
-			rev = rev*10+rem;
-			no = no/10;
-		}
-		System.out.println(rev);
-		
-		int[] a = {1,2,3,2,9,7,4};
-		int temp, l = a.length;
-		for(int j=0;j<l;j++) {
-			for(int i=0;i<l-1;i++) {
-				if(a[i+1]<a[i]) {
-					temp=a[i];
-					a[i]=a[i+1];
-					a[i+1]=temp;
-				}
-			}
-		}
-		for(int q:a) {
-			System.out.print(q);
-		}
+	public static void main(String[] args) throws IOException {
+	   FileInputStream fis = new FileInputStream("C:\\Users\\Anush\\Desktop\\Details.xlsx");
+	   Workbook wb = new XSSFWorkbook(fis);
+	   fis.close();
+	   Sheet sheet = wb.getSheet("Sheet1");
+	   Row row = sheet.getRow(1);
+	   Cell cell = row.getCell(0);
+	   String value  = cell.getStringCellValue();
+			  System.out.println(value); 
+			  cell.setCellValue("Anush Panday");
+			  System.out.println(cell);
+			  
+			  
+			  FileOutputStream fos  = new FileOutputStream("C:\\Users\\Anush\\Desktop\\Details.xlsx");
+		  wb.write(fos);
+		  fos.close();
+		  wb.close();
 	}
 	
 	
