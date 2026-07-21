@@ -4,21 +4,14 @@ public class Vowels {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Vowels obj = new Vowels();
-		obj.orOperator();
-		
-		
-		
+	String name = "My name is Anush";
+	String vowel = "AEIOUaeiou";
+	int count =0;
+	
+	for(int i=0;i<name.length();i++) {
+		if(vowel.indexOf(name.charAt(i)) != -1) {
+			count++;
+		}
 	}
-	void orOperator() {
-String name = "Anush";
-char[] name1 = name.toCharArray();
-int l = name1.length;
-for(int i=0;i<l;i++) {
-	if(name1[i]=='A' | name1[i]=='E' | name1[i]=='I' | name1[i]=='O' | name1[i]=='U' | name1[i]=='a' | name1[i]=='e' | name1[i]=='i' | name1[i]=='o' | name1[i]=='u' ) {
-		System.out.println(name1[i]+" is a vowel at "+(i+1));
-	}
-}
-	}
-
-}
+	System.out.println(count);
+}}
